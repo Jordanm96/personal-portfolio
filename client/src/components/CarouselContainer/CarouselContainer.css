@@ -1,3 +1,4 @@
+/* ADJUST THE ARROW POINTERS TO BE MORE VISBLE */
 #carousel {
   margin: 0 auto;
   width: 50%;
@@ -6,4 +7,19 @@
 
 #carousel img {
   height: 700px;
+  /* Opacity so we can see the caption better */
+  opacity: 0.9;
+}
+#carousel h4 {
+  color: black;
+  font-size: 40px;
+  /* Maybe add a background color and make the opacity super low with RGB */
+  background-color: rgb(0, 0, 0, 0.2);
+
+  /* Look at P1 for ways to make the text easier to read no matter the background */
+  text-shadow: 0.02em 0 lightgray, 0 0.02em lightgray;
+}
+#carousel p {
+  color: black;
+  font-size: 20px;
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CarouselContainer = () => {
   return (
     <div>
-      <h4>Click one!</h4>
+      <h4>Select an app for more info</h4>
       <Carousel id="carousel" indicators={false}>
         <Carousel.Item interval={900}>
           <Link to="/fresh">

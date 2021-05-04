@@ -59,22 +59,28 @@ const Home = () => {
         </section>
         <section id="contact">
           <h3>Contact Me!</h3>
-          <div className="contact-container">
-            <div className="contact-info">
-              <h4>Contact Info</h4>
+          {/* <div className="contact-container"> */}
+          <div className="contact-info-container">
+            <h4>Contact Info</h4>
+            <div className="info">
               <img src="https://i.imgur.com/Ey5DhH3.jpg" alt="jordan" />
-              <p>Phone: 916-698-0989</p>
-              <p>Email: jordmontero96@gmail.com</p>
-              <p>Location: San Diego, CA</p>
-            </div>
-            <div className="contact-form">
-              <h4>Let's work together!</h4>
-              <input placeholder="Name" />
-              <input placeholder="Email" />
-              <input placeholder="Message" />
-              <button>Send</button>
+              <div className="number-email-loc">
+                <p>Phone: 916-698-0989</p>
+                <p>Email: jordmontero96@gmail.com</p>
+                <p>Location: San Diego, CA</p>
+              </div>
             </div>
           </div>
+          <div className="contact-form-container">
+            <h4>Let's work together!</h4>
+            <form>
+              <input placeholder="Name" />
+              <input placeholder="Email" />
+              <textarea rows={8} placeholder="Message" />
+              <button>Send</button>
+            </form>
+          </div>
+          {/* </div> */}
         </section>
       </div>
     </>

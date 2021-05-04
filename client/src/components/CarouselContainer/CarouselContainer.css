@@ -1,0 +1,9 @@
+#carousel {
+  margin: 0 auto;
+  width: 50%;
+  height: 700px;
+}
+
+#carousel img {
+  height: 700px;
+}

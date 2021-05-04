@@ -1,4 +1,4 @@
-import CarouselContainer from "../../components/Carousel/Carousel";
+import CarouselContainer from "../../components/CarouselContainer/CarouselContainer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./Home.css";
@@ -6,11 +6,8 @@ const Home = () => {
   return (
     <>
       <nav>
-        <h1>Jordan</h1>
-        <ul className="nav">
-          <li>
-            <a href="#home">Home</a>
-          </li>
+        <h1> <a href="#home">Jordan</a></h1>
+        <ul>
           <li>
             <a href="#about">About Me</a>
           </li>

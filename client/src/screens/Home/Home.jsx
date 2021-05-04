@@ -19,6 +19,8 @@ const Home = () => {
           </li>
         </ul>
       </nav>
+      <div className='body'>
+
       <section id="home">
         <h2>Welcome,</h2>
         <h2>My name is Jordan Anthony Montero.</h2>
@@ -62,6 +64,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

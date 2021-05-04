@@ -31,14 +31,60 @@ img {
   height: 200px;
   width: 200px;
 }
+/* Body */
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px;
+}
+section {
+  margin-bottom: 100px;
+  width: 90%;
+}
 
 /* Welcome */
 #home {
   border: 2px solid red;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home h2 {
+  font-size: 50px;
 }
 /* About */
 #about {
   border: 2px solid red;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'heading heading'
+  'picture content'
+  ;
+  /* gap: 0px; */
+}
+#about h3 {
+  grid-area: heading;
+  font-size: 50px;
+  padding-bottom: 75px;
+}
+#about img {
+  grid-area: picture;
+  justify-self: center;
+  height: 100%;
+  width: 80%;
+  border-radius: 50%;
+}
+#about p {
+  grid-area: content;
+  justify-self: start;
+  align-self: center;
+  font-size: 25px;
+  text-align: left;
 }
 
 /* Projects */

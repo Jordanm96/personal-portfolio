@@ -1,4 +1,6 @@
-import React from "react";
+import CarouselContainer from "../../components/Carousel/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./Home.css";
 const Home = () => {
   return (
@@ -40,6 +42,7 @@ const Home = () => {
       </section>
       <section id="projects">
         <h3>Projects</h3>
+        <CarouselContainer />
         {/* Insert carousel component here with 3 images
       clickable links to each project */}
       </section>

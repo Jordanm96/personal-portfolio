@@ -59,7 +59,6 @@ const Home = () => {
         </section>
         <section id="contact">
           <h3>Contact Me!</h3>
-          {/* <div className="contact-container"> */}
           <div className="contact-info-container">
             <h4>Contact Info</h4>
             <div className="info">
@@ -80,7 +79,6 @@ const Home = () => {
               <button>Send</button>
             </form>
           </div>
-          {/* </div> */}
         </section>
       </div>
     </>

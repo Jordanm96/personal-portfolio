@@ -124,7 +124,7 @@ h3 {
   align-items: center;
 }
 .info {
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;

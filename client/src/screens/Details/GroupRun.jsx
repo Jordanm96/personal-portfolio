@@ -26,8 +26,8 @@ const GroupRun = () => {
               <strong>Built Using:</strong> React, JS, CSS, Airtable
               </p>
               <div className="git-app-links">
-                <a>DEPLOYED APP</a>
-                <a>GITHUB</a>
+                <a href='https://group-run-0f92c7.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
+                <a href='https://github.com/Jordanm96/Group-Run' target='_blank' rel='noopener noreferrer'>GITHUB</a>
               </div>
             </div>
           </div>

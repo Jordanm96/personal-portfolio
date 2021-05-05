@@ -25,8 +25,8 @@ const ImaMiru = () => {
                 <strong>Built Using:</strong> React, JS, CSS, Express, MongoDB
               </p>
               <div className="git-app-links">
-                <a>DEPLOYED APP</a>
-                <a>GITHUB</a>
+                <a href='https://ima-miru.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
+                <a href='https://github.com/Jordanm96/ima-miru' target='_blank' rel='noopener noreferrer'>GITHUB</a>
               </div>
             </div>
           </div>

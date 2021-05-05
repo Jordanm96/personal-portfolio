@@ -34,3 +34,6 @@
   display: flex;
   justify-content: space-evenly;
 }
+.git-app-links a {
+  color: blue;
+}

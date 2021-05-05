@@ -28,8 +28,8 @@ const ProjectDetail = () => {
                 ON RAILS
               </p>
               <div className='git-app-links'>
-              <a>DEPLOYED APP</a>
-              <a>GITHUB</a>
+              <a href='https://fresh-tomatoes.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
+              <a href='https://github.com/Jordanm96/fresh-tomatoes' target='_blank' rel='noopener noreferrer'>GITHUB</a>
               </div>
 
             </div>

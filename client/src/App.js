@@ -1,8 +1,8 @@
 import "./App.css";
 import Home from "./screens/Home/Home";
-import FreshTomatoes from "./screens/Projects/FreshTomatoes";
-import GroupRun from "./screens/Projects/GroupRun";
-import ImaMiru from "./screens/Projects/ImaMiru";
+import FreshTomatoes from "./screens/Details/FreshTomatoes";
+import GroupRun from "./screens/Details/GroupRun";
+import ImaMiru from "./screens/Details/ImaMiru";
 
 import { Route } from "react-router-dom";
 
@@ -13,7 +13,6 @@ function App() {
         <FreshTomatoes />
       </Route>
       <Route path='/group-run'>
-
       <GroupRun />
       </Route>
       <Route path='/ima-miru'>

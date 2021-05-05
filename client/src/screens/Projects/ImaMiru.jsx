@@ -17,8 +17,10 @@ const ImaMiru = () => {
         later.
       </p>
       <p>
-        <strong>Built Using:</strong>{' '}React, JS, CSS, Express, MongoDB
+        <strong>Built Using:</strong> React, JS, CSS, Express, MongoDB
       </p>
+      <a>DEPLOYD APP</a>
+      <a>GITHUB</a>
     </div>
   );
 };

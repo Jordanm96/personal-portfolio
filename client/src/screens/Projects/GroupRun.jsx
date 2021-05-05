@@ -19,8 +19,10 @@ const GroupRun = () => {
         others.{" "}
       </p>
       <p>
-        <strong>Built Using:</strong>{' '}React, JS, CSS, Airtable
+        <strong>Built Using:</strong> React, JS, CSS, Airtable
       </p>
+      <a>DEPLOYD APP</a>
+      <a>GITHUB</a>
     </div>
   );
 };

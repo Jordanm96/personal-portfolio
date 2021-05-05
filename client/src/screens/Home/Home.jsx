@@ -79,6 +79,7 @@ const Home = () => {
               <div className="number-email-loc">
                 <p>Phone: 916-698-0989</p>
                 <p>Email: jordmontero96@gmail.com</p>
+                <p>LinkedIn, GitHub LINKS</p>
                 <p>Location: San Diego, CA</p>
               </div>
             </div>

@@ -1,8 +1,21 @@
 import CarouselContainer from "../../components/CarouselContainer/CarouselContainer";
+import emailjs from 'emailjs-com';
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./Home.css";
+
 const Home = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ztxdzzc', 'template_jpbj7xe', e.target, 'user_tEvYRnL11rnYad3rkbySz')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+  }
   return (
     <>
       <nav>
@@ -72,10 +85,11 @@ const Home = () => {
           </div>
           <div className="contact-form-container">
             <h4>Let's work together!</h4>
-            <form>
-              <input placeholder="Name" />
-              <input placeholder="Email" />
-              <textarea rows={8} placeholder="Message" />
+            <form onSubmit={sendEmail}>
+              <input type='text' name='subject' placeholder="Subject" />
+              <input type='text' name='name' placeholder="Name" />
+              <textarea rows={8} type='text' name='message' placeholder="Message" />
+              <input type='text' name='email' placeholder="Email" />
               <button>Send</button>
             </form>
           </div>

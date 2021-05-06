@@ -1,6 +1,7 @@
 import React from "react";
 import DetailNav from "../../components/DetailNav/DetailNav";
 import "./ProjectDetail.css";
+import { Link } from 'react-router-dom';
 
 const ProjectDetail = () => {
   return (
@@ -30,6 +31,7 @@ const ProjectDetail = () => {
               <div className='git-app-links'>
               <a href='https://fresh-tomatoes.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
               <a href='https://github.com/Jordanm96/fresh-tomatoes' target='_blank' rel='noopener noreferrer'>GITHUB</a>
+                <Link to='/ima-miru'>Next Project{'->'}</Link>
               </div>
 
             </div>

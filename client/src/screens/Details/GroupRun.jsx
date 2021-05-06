@@ -1,5 +1,6 @@
 import React from "react";
 import DetailNav from "../../components/DetailNav/DetailNav";
+import { Link } from 'react-router-dom';
 
 const GroupRun = () => {
   return (
@@ -28,6 +29,8 @@ const GroupRun = () => {
               <div className="git-app-links">
                 <a href='https://group-run-0f92c7.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
                 <a href='https://github.com/Jordanm96/Group-Run' target='_blank' rel='noopener noreferrer'>GITHUB</a>
+                <Link to='/'>Home{'->'}</Link>
+
               </div>
             </div>
           </div>

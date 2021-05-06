@@ -20,7 +20,7 @@ const CarouselContainer = () => {
           </Link>
         </Carousel.Item>
         <Carousel.Item interval={900}>
-          <Link to="ima-miru">
+          <Link to="/ima-miru">
             <img
               className="d-block w-100"
               src="https://i.imgur.com/pXD4D0f.png"
@@ -32,7 +32,7 @@ const CarouselContainer = () => {
           </Link>
         </Carousel.Item>
         <Carousel.Item interval={900}>
-          <Link to="group-run">
+          <Link to="/group-run">
             <img
               className="d-block w-100"
               src="https://i.imgur.com/cQXUbQw.png"

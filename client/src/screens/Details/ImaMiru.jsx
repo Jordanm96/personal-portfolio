@@ -1,6 +1,7 @@
 import React from "react";
 import DetailNav from "../../components/DetailNav/DetailNav";
 import "./ProjectDetail.css";
+import { Link } from 'react-router-dom';
 
 const ImaMiru = () => {
   return (
@@ -27,6 +28,7 @@ const ImaMiru = () => {
               <div className="git-app-links">
                 <a href='https://ima-miru.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
                 <a href='https://github.com/Jordanm96/ima-miru' target='_blank' rel='noopener noreferrer'>GITHUB</a>
+                <Link to='/group-run'>Next Project{'->'}</Link>
               </div>
             </div>
           </div>

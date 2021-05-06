@@ -17,10 +17,13 @@
   grid-area: image;
   height: 700px;
   width: 700px;
-  box-shadow: 14px 14px 10px #aaa;
   box-shadow: 14px 14px 10px rgba(118,166,242, .9);
   border-radius: 5%;
   border: 5px solid rgba(118,166,242, .9);
+}
+.project-detail-container img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
 }
 .project-detail-container a {
   grid-area: image;
@@ -29,7 +32,6 @@
 
 .project-details {
   grid-area: details;
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -51,3 +53,5 @@
 a:hover {
   color: red;
 }
+
+

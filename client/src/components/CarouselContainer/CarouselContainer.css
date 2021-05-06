@@ -1,18 +1,19 @@
 /* ADJUST THE ARROW POINTERS TO BE MORE VISBLE */
 #carousel {
   margin: 0 auto;
-  width: 50%;
-  height: 800px;
-  outline: 4px dashed black;
-  box-shadow: 0 0 0 4px rgba(206,222,255,255);
-  animation: 1s animateBorder infinite;
+  /* width: 50%; */
+  /* height: 800px; */
+  width: 50vw;
+  height: 50vh;
 }
 
 #carousel img {
-  height: 800px;
-  /* width: 800px; */
-  /* Opacity so we can see the caption better */
-  opacity: 0.9;
+  /* height: 800px; */
+  /* For media queries, take this height off */
+  height: 700px;
+  /* opacity: 0.9; */
+  /* height: 50vh; */
+
 
 }
 #carousel h4 {
@@ -20,7 +21,6 @@
   font-size: 40px;
   /* Maybe add a background color and make the opacity super low with RGB */
   background-color: rgb(0, 0, 0, 0.2);
-
   /* Look at P1 for ways to make the text easier to read no matter the background */
   text-shadow: 0.02em 0 lightgray, 0 0.02em lightgray;
 }

@@ -50,13 +50,10 @@ a, .detail-nav h1  {
 }
 section {
   /* border: 2px solid red; */
-  margin-top: 200px;
+  /* margin-top: 200px; */
   margin-bottom: 100px;
   width: 90%;
-/* 
-  color: white;
-  color: black;
-  color: #003e82; */
+
   padding: 100px 20px;
 }
 h2 {
@@ -82,9 +79,18 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1468581264429-2548ef9eb732?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #home h2 {
   font-size: 6rem;
+  color:black;
+  /* color: white; */
   text-align: center;
   /* color: #003e82; */
 }
@@ -97,9 +103,10 @@ h4 {
   'heading heading'
   'picture content'
   ;
-  outline: 10px dashed black;
-  box-shadow: 0 0 0 10px rgba(206,222,255,.1);
-  animation: 2s animateBorderThick infinite;
+  /* outline: 10px dashed black; */
+  /* outline: 10px dashed rgba(118,166,242, .9); */
+  /* box-shadow: 0 0 0 10px rgba(206,222,255,.1);
+  animation: 2s animateBorderThick infinite; */
   box-sizing: content-box;
 }
 #about h3 {
@@ -141,6 +148,8 @@ h4 {
   /* gap: 0 50px; */
   
   margin: 0 auto;
+  margin-top: 200px;
+  /* height: 100vh; */
 }
 #contact h3 {
   grid-area: heading;
@@ -156,15 +165,12 @@ h4 {
   align-items: center;
   padding: 50px 0;
   margin-top: 50px;
-  background: rgb(211,211,211,.8);
   background: rgba(118,166,242, .9);
   border: 2px solid black;
   margin: 0 auto;
   margin-top: 50px;
   width: 60%;
-  outline: 4px dashed black;
-  box-shadow: 0 0 0 4px rgba(206,222,255,255);
-  animation: 1s animateBorder infinite;
+
   /* text-shadow: white 0px 0px 10px; */
 
 
@@ -197,10 +203,8 @@ h4 {
 
 .contact-form-container {
   grid-area: form;
-  /* border: 2px solid green; */
   border: 2px solid black;
   background: rgba(118,166,242, .9);
-
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -208,10 +212,6 @@ h4 {
   margin: 0 auto;
   margin-top: 50px;
   width: 80%;
-  outline: 4px dashed black;
-  box-shadow: 0 0 0 4px rgba(206,222,255,255);
-  animation: 1s animateBorder infinite;
-  
 }
 
 form {

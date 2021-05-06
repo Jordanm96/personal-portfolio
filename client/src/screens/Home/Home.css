@@ -97,7 +97,10 @@ h4 {
   'heading heading'
   'picture content'
   ;
-  /* gap: 0px; */
+  outline: 10px dashed black;
+  box-shadow: 0 0 0 10px rgba(206,222,255,.1);
+  animation: 2s animateBorderThick infinite;
+  box-sizing: content-box;
 }
 #about h3 {
   grid-area: heading;
@@ -159,6 +162,9 @@ h4 {
   margin: 0 auto;
   margin-top: 50px;
   width: 60%;
+  outline: 4px dashed black;
+  box-shadow: 0 0 0 4px rgba(206,222,255,255);
+  animation: 1s animateBorder infinite;
   /* text-shadow: white 0px 0px 10px; */
 
 
@@ -183,19 +189,12 @@ h4 {
 .number-email-loc {
   margin-bottom: 70px;
   font-size: 25px;
-  border: 2px dashed black;
-  /* animation: rotate 2s linear infinite; */
+  /* outline: 6px dashed black;
+  box-shadow: 0 0 0 6px rgba(118,166,242, .9);
+  animation: 1s animateBorder infinite; */
 
 }
 
-@keyframes rotate {
-  from{
-      transform: rotate(0deg);
-  }
-  to{
-      transform: rotate(180deg);
-  }
-}
 .contact-form-container {
   grid-area: form;
   /* border: 2px solid green; */
@@ -209,6 +208,10 @@ h4 {
   margin: 0 auto;
   margin-top: 50px;
   width: 80%;
+  outline: 4px dashed black;
+  box-shadow: 0 0 0 4px rgba(206,222,255,255);
+  animation: 1s animateBorder infinite;
+  
 }
 
 form {
@@ -259,5 +262,17 @@ button:hover a:hover {
   }
   to{
       transform: rotate(180deg);
+  }
+}
+@keyframes animateBorder {
+  to {
+    outline-color: rgba(206,222,255,255);
+    box-shadow: 0 0 0 4px black;
+  }
+}
+@keyframes animateBorderThick {
+  to {
+    outline-color: rgba(206,222,255,255);
+    box-shadow: 0 0 0 10px black;
   }
 }

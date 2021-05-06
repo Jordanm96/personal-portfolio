@@ -2,7 +2,10 @@
 #carousel {
   margin: 0 auto;
   width: 50%;
-  height: 700px;
+  height: 800px;
+  outline: 4px dashed black;
+  box-shadow: 0 0 0 4px rgba(206,222,255,255);
+  animation: 1s animateBorder infinite;
 }
 
 #carousel img {
@@ -10,6 +13,7 @@
   /* width: 800px; */
   /* Opacity so we can see the caption better */
   opacity: 0.9;
+
 }
 #carousel h4 {
   color: black;

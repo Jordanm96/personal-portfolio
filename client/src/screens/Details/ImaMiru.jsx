@@ -1,7 +1,7 @@
 import React from "react";
 import DetailNav from "../../components/DetailNav/DetailNav";
 import "./ProjectDetail.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ImaMiru = () => {
   return (
@@ -10,7 +10,13 @@ const ImaMiru = () => {
       <div className="body">
         <section>
           <div className="project-detail-container">
-            <img src="https://i.imgur.com/pXD4D0f.png" alt="Ima Miru" />
+            <a
+              href="https://ima-miru.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://i.imgur.com/pXD4D0f.png" alt="Ima Miru" />
+            </a>
             <div className="project-details">
               <h4>Ima Miru</h4>
               <p>
@@ -26,9 +32,21 @@ const ImaMiru = () => {
                 <strong>Built Using:</strong> React, JS, CSS, Express, MongoDB
               </p>
               <div className="git-app-links">
-                <a href='https://ima-miru.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
-                <a href='https://github.com/Jordanm96/ima-miru' target='_blank' rel='noopener noreferrer'>GITHUB</a>
-                <Link to='/group-run'>Next Project{'->'}</Link>
+                <a
+                  href="https://ima-miru.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit App {"->"}
+                </a>
+                <a
+                  href="https://github.com/Jordanm96/ima-miru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GITHUB
+                </a>
+                <Link to="/group-run">Next Project{"->"}</Link>
               </div>
             </div>
           </div>

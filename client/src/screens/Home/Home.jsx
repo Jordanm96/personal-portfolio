@@ -38,7 +38,7 @@ const Home = () => {
       <div className="body">
         <section id="home">
           <h2>Welcome,</h2>
-          <h2>My name is Jordan Anthony Montero.</h2>
+          <h2>My name is Jordan Anthony Montero</h2>
           <h2>Nice to meet you!</h2>
         </section>
         <section id="about">
@@ -70,6 +70,7 @@ const Home = () => {
           <h3>Projects</h3>
           <CarouselContainer />
         </section>
+
         <section id="contact">
           <h3>Contact Me!</h3>
           <div className="contact-info-container">
@@ -79,18 +80,18 @@ const Home = () => {
               <div className="number-email-loc">
                 <p>Phone: 916-698-0989</p>
                 <p>Email: jordmontero96@gmail.com</p>
-                <p>LinkedIn, GitHub LINKS</p>
+                <p><a href='https://www.linkedin.com/in/jordanm96/' target='_blank' rel='noopener noreferrer'>LinkedIn{' '}</a><a href='https://github.com/Jordanm96' target='_blank' rel='noopener noreferrer'>Github</a></p>
                 <p>Location: San Diego, CA</p>
               </div>
             </div>
           </div>
           <div className="contact-form-container">
-            <h4>Let's work together!</h4>
+            <h4>Let's connect!</h4>
             <form onSubmit={sendEmail}>
-              <input type='text' name='subject' placeholder="Subject" />
-              <input type='text' name='name' placeholder="Name" />
-              <textarea rows={8} type='text' name='message' placeholder="Message" />
-              <input type='text' name='email' placeholder="Email" />
+              <input type='text' name='subject' placeholder="Subject" required />
+              <input type='text' name='name' placeholder="Name" required />
+              <textarea rows={8} type='text' name='message' placeholder="Message" required />
+              <input type='text' name='email' placeholder="Email" required />
               <button>Send</button>
             </form>
           </div>

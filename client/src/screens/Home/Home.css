@@ -1,20 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 /* ----------------------------Nav---------------------------- */
 nav {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  /* background-color: rgb(0, 0, 0, 0.8);
-  background-color: rgb(51, 58, 86, 0.8);
-  background-color: rgb(25,133,161, .8);
-  background: rgb(255,255,255, .5); */
-  
-  background: rgb(211,211,211,.8);
-  /* Turn this on after adding margin to welcome */
   position: fixed;
   padding: 10px 0;
   /* This keeps my nav bar on top */
   z-index: 9999;
+  background: rgba(118,166,242, .9);
+  font-family: 'Dosis', sans-serif;
+
 }
 nav h1 {
   font-size: 60px;
@@ -33,9 +30,10 @@ li {
 }
 a, .detail-nav h1  {
   text-decoration: none;
-  color: #003e82;
-  /* color: black; */
-  /* color: white; */
+  /* color: #003e82; */
+  color: white;
+  color: black;
+
 }
 
 /* ----------------------------Body---------------------------- */
@@ -44,21 +42,38 @@ a, .detail-nav h1  {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #f7f8f8;
+  /* color: #f7f8f8; */
+  /* background: black; */
+  background: rgba(206,222,255,255);
+  font-family: 'Dosis', sans-serif;
+
 }
 section {
   /* border: 2px solid red; */
   margin-top: 200px;
   margin-bottom: 100px;
   width: 90%;
-
+/* 
   color: white;
   color: black;
-  color: #003e82;
+  color: #003e82; */
   padding: 100px 20px;
+}
+h2 {
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: white 0px 0px 10px;
+
 }
 h3 {
   font-size: 50px;
+  font-weight: bold;
+  text-shadow: white 0px 0px 10px;
+
+}
+h4 {
+  font-weight: bold;
+
 }
 
 /* ----------------------------Welcome---------------------------- */
@@ -69,7 +84,9 @@ h3 {
   justify-content: center;
 }
 #home h2 {
-  font-size: 50px;
+  font-size: 6rem;
+  text-align: center;
+  /* color: #003e82; */
 }
 /* ----------------------------About---------------------------- */
 #about {
@@ -100,6 +117,9 @@ h3 {
   align-self: center;
   font-size: 25px;
   text-align: left;
+  font-weight: bold;
+  text-shadow: white 0px 0px 10px;
+
 }
 .resume-link {
   color: black;
@@ -115,9 +135,15 @@ h3 {
   'heading heading'
   'info form'
   ;
+  /* gap: 0 50px; */
+  
+  margin: 0 auto;
 }
 #contact h3 {
   grid-area: heading;
+}
+#contact h4 {
+  font-size: 30px;
 }
 .contact-info-container {
   grid-area: info;
@@ -126,16 +152,27 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
+  margin-top: 50px;
+  background: rgb(211,211,211,.8);
+  background: rgba(118,166,242, .9);
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60%;
+  /* text-shadow: white 0px 0px 10px; */
+
+
 
 }
 .info {
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: auto 0;
   height: 100%;
+  /* margin-top: 100px; */
+
 
 }
 .info img {
@@ -145,19 +182,33 @@ h3 {
 }
 .number-email-loc {
   margin-bottom: 70px;
-  font-size: 20px;
+  font-size: 25px;
+  border: 2px dashed black;
+  /* animation: rotate 2s linear infinite; */
+
 }
 
-
+@keyframes rotate {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(180deg);
+  }
+}
 .contact-form-container {
   grid-area: form;
   /* border: 2px solid green; */
   border: 2px solid black;
-  background: rgb(211,211,211,.8);
+  background: rgba(118,166,242, .9);
+
   padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
 }
 
 form {
@@ -175,8 +226,38 @@ input, textarea, button {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+input, textarea {
+  padding: 12px 15px;
+  border: 2px solid black;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  box-shadow: 5px 5px 8px 5px #bfd6ff;
+
+}
+
+textarea {
+  resize: none;
+}
 
 button {
   width: fit-content;
+
+}
+/* find a:hover in projdetail css as well */
+button:hover a:hover { 
+  color: red;
 }
 
+/* ----------------------------Keyframes---------------------------- */
+
+
+@keyframes rotate {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(180deg);
+  }
+}

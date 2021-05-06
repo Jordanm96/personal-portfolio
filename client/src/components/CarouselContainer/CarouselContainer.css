@@ -6,7 +6,8 @@
 }
 
 #carousel img {
-  height: 700px;
+  height: 800px;
+  /* width: 800px; */
   /* Opacity so we can see the caption better */
   opacity: 0.9;
 }

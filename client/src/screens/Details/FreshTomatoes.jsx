@@ -1,7 +1,7 @@
 import React from "react";
 import DetailNav from "../../components/DetailNav/DetailNav";
 import "./ProjectDetail.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ProjectDetail = () => {
   return (
@@ -10,8 +10,14 @@ const ProjectDetail = () => {
       <div className="body">
         <section>
           <div className="project-detail-container">
-            <img src="https://i.imgur.com/PzMIvjU.png" alt="Fresh Tomatoes" />
-            <div className='project-details'>
+            <a
+              href="https://fresh-tomatoes.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://i.imgur.com/PzMIvjU.png" alt="Fresh Tomatoes" />
+            </a>
+            <div className="project-details">
               <h4>Fresh Tomatoes</h4>
               <p>
                 <strong>Description:</strong> Fresh Tomatoes (inspired by rotten
@@ -28,12 +34,23 @@ const ProjectDetail = () => {
                 <strong>Built Using:</strong> REACT, JS, CSS, POSTGRESQL, RUBY
                 ON RAILS
               </p>
-              <div className='git-app-links'>
-              <a href='https://fresh-tomatoes.netlify.app/' target='_blank' rel='noopener noreferrer'>Visit App {'->'}</a>
-              <a href='https://github.com/Jordanm96/fresh-tomatoes' target='_blank' rel='noopener noreferrer'>GITHUB</a>
-                <Link to='/ima-miru'>Next Project{'->'}</Link>
+              <div className="git-app-links">
+                <a
+                  href="https://fresh-tomatoes.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit App {"->"}
+                </a>
+                <a
+                  href="https://github.com/Jordanm96/fresh-tomatoes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GITHUB
+                </a>
+                <Link to="/ima-miru">Next Project{"->"}</Link>
               </div>
-
             </div>
           </div>
         </section>

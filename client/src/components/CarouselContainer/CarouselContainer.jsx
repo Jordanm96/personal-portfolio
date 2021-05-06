@@ -7,7 +7,7 @@ const CarouselContainer = () => {
     <div>
       <h4>Select an app for more info</h4>
       <Carousel id="carousel" indicators={false}>
-        <Carousel.Item interval={900}>
+        <Carousel.Item interval={1000}>
           <Link to="/fresh">
             <img
               className="d-block w-100"
@@ -19,7 +19,7 @@ const CarouselContainer = () => {
           </Carousel.Caption>
           </Link>
         </Carousel.Item>
-        <Carousel.Item interval={900}>
+        <Carousel.Item interval={1000}>
           <Link to="/ima-miru">
             <img
               className="d-block w-100"
@@ -31,7 +31,7 @@ const CarouselContainer = () => {
           </Carousel.Caption>
           </Link>
         </Carousel.Item>
-        <Carousel.Item interval={900}>
+        <Carousel.Item interval={1000}>
           <Link to="/group-run">
             <img
               className="d-block w-100"

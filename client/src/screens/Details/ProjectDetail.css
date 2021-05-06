@@ -19,7 +19,9 @@
   width: 700px;
   box-shadow: 14px 14px 10px rgba(118,166,242, .9);
   border-radius: 5%;
-  border: 5px solid rgba(118,166,242, .9);
+  border: none;
+  border-right: 5px solid rgba(118,166,242, .9);
+  border-bottom: 5px solid rgba(118,166,242, .9);
 }
 .project-detail-container img:hover {
   transform: scale(1.1);
@@ -38,7 +40,8 @@
   justify-content: space-between;
   font-size: 25px;
   width: 80%;
-
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .project-details h4 {
   font-size: 50px;
@@ -48,10 +51,17 @@
   justify-content: space-evenly;
 }
 .git-app-links a {
-  color: blue;
+  background-color: rgba(118,166,242, .9);
+  border-radius: 50%;
+  color: black;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 a:hover {
-  color: red;
+  color: white;
+  transform: scale(1.1);
 }
 
 

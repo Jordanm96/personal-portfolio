@@ -1,6 +1,7 @@
 import CarouselContainer from "../../components/CarouselContainer/CarouselContainer";
 import emailjs from 'emailjs-com';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'react-bootstrap/Button';
 import "./Home.css";
 
 const Home = () => {
@@ -92,7 +93,7 @@ const Home = () => {
               <input type='text' name='name' placeholder="Name" required />
               <textarea rows={8} type='text' name='message' placeholder="Message" required />
               <input type='text' name='email' placeholder="Email" required />
-              <button>Send</button>
+              <Button variant="light">Send</Button>
             </form>
           </div>
         </section>

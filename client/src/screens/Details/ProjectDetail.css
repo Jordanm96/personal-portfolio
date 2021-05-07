@@ -1,5 +1,4 @@
 .project-detail-container {
-  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -7,16 +6,14 @@
   'image details'
   ;
   gap: 40px;
-  height: 90%;
-  height: 900px;
-  /* font-weight: bold; */
+  height: 100vh;
   text-shadow: white 0px 0px 10px;
 }
 
 .project-detail-container img {
   grid-area: image;
-  height: 700px;
-  width: 700px;
+  height: 80vh;
+  width: 40vw;
   box-shadow: 14px 14px 10px rgba(118,166,242, .9);
   border-radius: 5%;
   border: none;
@@ -38,13 +35,13 @@
   flex-direction: column;
   text-align: left;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 20px;
   width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 .project-details h4 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .git-app-links {
   display: flex;
@@ -57,6 +54,8 @@
   padding: 1em 1.5em;
   text-decoration: none;
   font-weight: bold;
+  font-size: 12px;
+
 }
 
 a:hover {
@@ -65,3 +64,22 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 375px) {
+  .project-detail-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  .project-detail-container img {
+    width: 80vw;
+    height: 50vh;
+    order: 0;
+  }
+  .project-details {
+    order: 1;
+    font-size: 14px;
+    text-align: center;
+  }
+}

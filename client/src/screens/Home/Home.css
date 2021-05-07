@@ -296,14 +296,17 @@ button:hover a:hover {
     text-align: center;
   }
   .contact-form-container {
-    width: 100%;
+    width: 90%;
   }
   .contact-info-container {
-    width: 100%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 375px) {
   #home h2 {
     font-size: 3rem;
+  }
+  section {
+    padding: 10px 0;
   }
 }

@@ -18,7 +18,7 @@ const Home = () => {
     e.target.reset()
   }
   return (
-    <>
+    <center>
       <nav>
         <h1>
           {" "}
@@ -91,14 +91,14 @@ const Home = () => {
             <form onSubmit={sendEmail}>
               <input type='text' name='subject' placeholder="Subject" required />
               <input type='text' name='name' placeholder="Name" required />
-              <textarea rows={8} type='text' name='message' placeholder="Message" required />
               <input type='text' name='email' placeholder="Email" required />
+              <textarea rows={8} type='text' name='message' placeholder="Message" required />
               <Button variant="light">Send</Button>
             </form>
           </div>
         </section>
       </div>
-    </>
+    </center>
   );
 };
 

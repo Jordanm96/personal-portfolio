@@ -9,7 +9,7 @@ import { Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Route path="/fresh">
+      <Route path="/fresh-tomatoes">
         <FreshTomatoes />
       </Route>
       <Route path='/group-run'>

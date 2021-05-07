@@ -39,6 +39,8 @@
   width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
+  height: fit-content;
+
 }
 .project-details h4 {
   font-size: 40px;
@@ -48,14 +50,17 @@
   justify-content: space-evenly;
 }
 .git-app-links a {
-  background-color: rgba(118,166,242, .9);
-  border-radius: 50%;
-  color: black;
-  padding: 1em 1.5em;
+  background-color: white;
+  border-radius: 5%;
+  color:rgba(118, 166, 242, 1);
+  padding: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px;
-
+  font-size: 15px;
+}
+.git-app-links a:hover {
+  color: white;
+  background-color: rgba(118, 166, 242, 1);
 }
 
 a:hover {
@@ -63,14 +68,31 @@ a:hover {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 800px) {
+  .project-detail-container {
+  height: 80vh;
+  }
+  .project-detail-container img {
+    height: 60vh;
+    align-self: center;
+    justify-self: center;
+  }
+  .project-details {
+    height: 60vh;
+    font-size: 13px;
+  }
+}
 
-@media only screen and (max-width: 375px) {
+
+
+
+@media only screen and (max-width: 600px) {
   .project-detail-container {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 400px;
   }
   .project-detail-container img {
     width: 80vw;

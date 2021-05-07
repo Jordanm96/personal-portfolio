@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+/* Welcome Font */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 /* ----------------------------Nav---------------------------- */
 nav {
   width: 100%;
@@ -31,6 +33,11 @@ a,
 .detail-nav h1 {
   text-decoration: none;
   color: black;
+}
+a:hover, .detail-nav h1:hover, .resume-link:hover {
+  font-weight: bold;
+  text-decoration: none;
+
 }
 
 /* ----------------------------Body---------------------------- */
@@ -74,6 +81,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: 'Original Surfer', cursive;
 }
 #home h2 {
   font-size: 6rem;
@@ -93,7 +101,7 @@ h4 {
 #about h3 {
   grid-area: heading;
   font-size: 50px;
-  padding-bottom: 75px;
+  padding-bottom: 20px;
 }
 #about img {
   grid-area: picture;
@@ -112,8 +120,22 @@ h4 {
   text-shadow: white 0px 0px 10px;
 }
 .resume-link {
-  color: black;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  color:rgba(118, 166, 242, 1);
+  font-weight: bold;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5%;
+  align-items: center;
 }
+
+.resume-link:hover {
+  color: white;
+  background-color: rgba(118, 166, 242, 1);
+}
+
 /* ----------------------------Projects---------------------------- */
 /* See ProjectDetail.css */
 /* ----------------------------Contact---------------------------- */
@@ -159,7 +181,26 @@ h4 {
   height: 200px;
   width: 200px;
 }
+.info p {
+  margin-bottom: 10px;
+}
+.info a {
 
+}
+.info a {
+  /* display: flex;
+  margin: 0 auto;
+  width: fit-content; */
+  color:rgba(118, 166, 242, 1);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5%;
+}
+.info a:hover {
+  color: rgba(118, 166, 242, 1);
+  background-color: white;
+}
 .contact-form-container {
   grid-area: form;
   border: 2px solid black;
@@ -240,7 +281,6 @@ button:hover a:hover {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 200px;
   }
   .contact-info-container {
     display: flex;
@@ -279,7 +319,7 @@ button:hover a:hover {
     display: none;
   }
 }
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 750px) {
   li {
     font-size: 20px;
   }

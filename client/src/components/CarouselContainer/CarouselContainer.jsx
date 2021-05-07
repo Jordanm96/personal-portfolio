@@ -8,7 +8,7 @@ const CarouselContainer = () => {
       <h4>Select an app for more info</h4>
       <Carousel id="carousel" indicators={false}>
         <Carousel.Item interval={1000}>
-          <Link to="/fresh">
+          <Link to="/fresh-tomatoes">
             <img
               className="d-block w-100"
               src="https://i.imgur.com/PzMIvjU.png"

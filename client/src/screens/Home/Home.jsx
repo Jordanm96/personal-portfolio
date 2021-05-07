@@ -3,15 +3,14 @@ import emailjs from 'emailjs-com';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button';
 import "./Home.css";
-
+// import '../../profile.jpg';
 const Home = () => {
 
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs.sendForm('service_ztxdzzc', 'template_jpbj7xe', e.target, 'user_tEvYRnL11rnYad3rkbySz')
-      .then((result) => {
-        console.log(result.text);
+    .then((result) => {
+      console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
@@ -81,7 +80,10 @@ const Home = () => {
               <div className="number-email-loc">
                 <p>Phone: 916-698-0989</p>
                 <p>Email: jordmontero96@gmail.com</p>
-                <p><a href='https://www.linkedin.com/in/jordanm96/' target='_blank' rel='noopener noreferrer'>LinkedIn{' '}</a><a href='https://github.com/Jordanm96' target='_blank' rel='noopener noreferrer'>Github</a></p>
+                <div className='info-links'>
+                  <a href='https://www.linkedin.com/in/jordanm96/' target='_blank' rel='noopener noreferrer'><i class="fab fa-linkedin"></i></a>
+                  <a href='https://github.com/Jordanm96' target='_blank' rel='noopener noreferrer'><i class="fab fa-github"></i></a>
+                </div>
                 <p>Location: San Diego, CA</p>
               </div>
             </div>
@@ -93,7 +95,8 @@ const Home = () => {
               <input type='text' name='name' placeholder="Name" required />
               <input type='text' name='email' placeholder="Email" required />
               <textarea rows={8} type='text' name='message' placeholder="Message" required />
-              <Button variant="light">Send</Button>
+              <Button variant="light" type='submit'>Send</Button>
+              {/* <button>Send</button> */}
             </form>
           </div>
         </section>

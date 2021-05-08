@@ -73,7 +73,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Resumé
+              Resume
             </a>
           </div>
         </section>

@@ -29,7 +29,7 @@ const Home = () => {
       <nav>
         <h1>
           {" "}
-          <a href="#home">Jordan</a>
+          <a className='logo' href="#home">JAM</a>
         </h1>
         <ul>
           <li>

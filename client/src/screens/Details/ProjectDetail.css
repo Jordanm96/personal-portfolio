@@ -1,10 +1,9 @@
 .project-detail-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  'image details'
-  'image details'
-  ;
+  grid-template-areas:
+    "image details"
+    "image details";
   gap: 40px;
   height: 100vh;
   text-shadow: white 0px 0px 10px;
@@ -14,11 +13,11 @@
   grid-area: image;
   height: 80vh;
   width: 40vw;
-  box-shadow: 14px 14px 10px rgba(118,166,242, .9);
+  box-shadow: 14px 14px 10px rgba(118, 166, 242, 0.9);
   border-radius: 5%;
   border: none;
-  border-right: 5px solid rgba(118,166,242, .9);
-  border-bottom: 5px solid rgba(118,166,242, .9);
+  border-right: 5px solid rgba(118, 166, 242, 0.9);
+  border-bottom: 5px solid rgba(118, 166, 242, 0.9);
 }
 .project-detail-container img:hover {
   transform: scale(1.1);
@@ -40,7 +39,6 @@
   margin-top: 100px;
   margin-bottom: 100px;
   /* height: fit-content; */
-
 }
 .project-details h4 {
   font-size: 40px;
@@ -52,13 +50,13 @@
 .git-app-links a {
   background-color: white;
   border-radius: 5%;
-  color:rgba(118, 166, 242, 1);
+  color: rgba(118, 166, 242, 1);
   padding: 5px;
   margin-left: 2px;
   margin-right: 2px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 30px;
 }
 .git-app-links a:hover {
   color: white;
@@ -72,7 +70,7 @@ a:hover {
 
 @media only screen and (max-width: 800px) {
   .project-detail-container {
-  height: 80vh;
+    height: 80vh;
   }
   .project-detail-container img {
     height: 60vh;
@@ -84,9 +82,6 @@ a:hover {
     font-size: 13px;
   }
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
   .project-detail-container {
@@ -106,5 +101,8 @@ a:hover {
     order: 1;
     font-size: 14px;
     text-align: center;
+  }
+  .git-app-links a {
+    font-size: 15px;
   }
 }

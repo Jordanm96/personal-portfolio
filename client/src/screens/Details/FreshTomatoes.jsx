@@ -40,16 +40,16 @@ const ProjectDetail = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Deployed App <i class="fas fa-external-link-alt"></i>
+                  Deployed App <i className="fas fa-external-link-alt"></i>
                 </a>
                 <a
                   href="https://github.com/Jordanm96/fresh-tomatoes"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Code <i class="fas fa-external-link-alt"></i>
+                  Code <i className="fas fa-external-link-alt"></i>
                 </a>
-                <Link to="/ima-miru">Next Project <i class="fas fa-angle-double-right"></i></Link>
+                <Link to="/ima-miru">Next Project <i className="fas fa-angle-double-right"></i></Link>
               </div>
             </div>
           </div>

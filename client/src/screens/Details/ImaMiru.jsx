@@ -37,16 +37,16 @@ const ImaMiru = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Deployed App <i class="fas fa-external-link-alt"></i>
+                  Deployed App <i className="fas fa-external-link-alt"></i>
                 </a>
                 <a
                   href="https://github.com/Jordanm96/ima-miru"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Github <i class="fas fa-external-link-alt"></i>
+                  Github <i className="fas fa-external-link-alt"></i>
                 </a>
-                <Link to="/group-run">Next Project <i class="fas fa-angle-double-right"></i></Link>
+                <Link to="/group-run">Next Project <i className="fas fa-angle-double-right"></i></Link>
               </div>
             </div>
           </div>

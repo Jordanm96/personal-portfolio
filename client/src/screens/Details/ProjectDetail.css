@@ -39,7 +39,7 @@
   width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
-  height: fit-content;
+  /* height: fit-content; */
 
 }
 .project-details h4 {
@@ -65,7 +65,7 @@
 
 a:hover {
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 800px) {
@@ -93,6 +93,7 @@ a:hover {
     align-items: center;
     margin: 0 auto;
     margin-top: 400px;
+    /* gap: 0px; */
   }
   .project-detail-container img {
     width: 80vw;

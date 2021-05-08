@@ -1,20 +1,29 @@
 import CarouselContainer from "../../components/CarouselContainer/CarouselContainer";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 import "./Home.css";
+import resume from '../../assets/SE_Resume.pdf';
 // import '../../profile.jpg';
 const Home = () => {
-
   function sendEmail(e) {
     e.preventDefault();
-    emailjs.sendForm('service_ztxdzzc', 'template_jpbj7xe', e.target, 'user_tEvYRnL11rnYad3rkbySz')
-    .then((result) => {
-      console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset()
+    emailjs
+      .sendForm(
+        "service_ztxdzzc",
+        "template_jpbj7xe",
+        e.target,
+        "user_tEvYRnL11rnYad3rkbySz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   }
   return (
     <center>
@@ -46,19 +55,23 @@ const Home = () => {
           <img src="https://i.imgur.com/Ey5DhH3.jpg" alt="jordan" />
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I am an innovative Software Engineer with a passion for
+              problem-solving that drives me to create high quality applications
+              that are instinctively user-friendly. I work well on a team, yet
+              I’m a motivated self-starter and quick learner. My degree in
+              Psychology gives me insight into human behavior, enabling me to
+              work well with all personality types and form strong relationships
+              with peers, coworkers, and clients. Years of work in the
+              restaurant industry honed my strong people-facing skills and gave
+              me experience in a fast-paced environment. I’ve been commended for
+              my impressive work ethic and look forward to applying it at a
+              high-achieving and supportive company as a Software Engineer.
             </p>
-            {/* RIGHT NOW THIS IS ONLY LINKING TO GOOGLE
+            {/* RIGHT NOW THIS IS ONLY LINKING TO facebook
             IT NEEDS TO LINK TO A PDF OF MY RESUME */}
             <a
               className="resume-link"
-              href="google.com"
+              href='https://facebook.com'
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,9 +93,21 @@ const Home = () => {
               <div className="number-email-loc">
                 <p>Phone: 916-698-0989</p>
                 <p>Email: jordmontero96@gmail.com</p>
-                <div className='info-links'>
-                  <a href='https://www.linkedin.com/in/jordanm96/' target='_blank' rel='noopener noreferrer'><i class="fab fa-linkedin"></i></a>
-                  <a href='https://github.com/Jordanm96' target='_blank' rel='noopener noreferrer'><i class="fab fa-github"></i></a>
+                <div className="info-links">
+                  <a
+                    href="https://www.linkedin.com/in/jordanm96/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Jordanm96"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
                 </div>
                 <p>Location: San Diego, CA</p>
               </div>
@@ -91,11 +116,24 @@ const Home = () => {
           <div className="contact-form-container">
             <h4>Let's connect!</h4>
             <form onSubmit={sendEmail}>
-              <input type='text' name='subject' placeholder="Subject" required />
-              <input type='text' name='name' placeholder="Name" required />
-              <input type='text' name='email' placeholder="Email" required />
-              <textarea rows={8} type='text' name='message' placeholder="Message" required />
-              <Button variant="light" type='submit'>Send</Button>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="email" placeholder="Email" required />
+              <textarea
+                rows={8}
+                type="text"
+                name="message"
+                placeholder="Message"
+                required
+              />
+              <Button variant="light" type="submit">
+                Send
+              </Button>
               {/* <button>Send</button> */}
             </form>
           </div>

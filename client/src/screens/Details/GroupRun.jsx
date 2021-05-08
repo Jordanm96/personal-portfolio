@@ -38,16 +38,16 @@ const GroupRun = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Deployed App <i class="fas fa-external-link-alt"></i>
+                  Deployed App <i className="fas fa-external-link-alt"></i>
                 </a>
                 <a
                   href="https://github.com/Jordanm96/Group-Run"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Github <i class="fas fa-external-link-alt"></i>
+                  Github <i className="fas fa-external-link-alt"></i>
                 </a>
-                <Link to="/">Home <i class="fas fa-angle-double-right"></i></Link>
+                <Link to="/">Home <i className="fas fa-angle-double-right"></i></Link>
               </div>
             </div>
           </div>

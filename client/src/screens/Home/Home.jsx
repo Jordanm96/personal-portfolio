@@ -71,7 +71,7 @@ const Home = () => {
             IT NEEDS TO LINK TO A PDF OF MY RESUME */}
             <a
               className="resume-link"
-              href='https://facebook.com'
+              href='https://drive.google.com/file/d/1TqY3LDbrpHLqdKSrfQRpknmxUGR_tBsG/view?usp=sharing'
               target="_blank"
               rel="noopener noreferrer"
             >

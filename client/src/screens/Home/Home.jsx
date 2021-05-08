@@ -3,8 +3,7 @@ import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import "./Home.css";
-import resume from '../../assets/SE_Resume.pdf';
-// import '../../profile.jpg';
+
 const Home = () => {
   function sendEmail(e) {
     e.preventDefault();
@@ -52,7 +51,8 @@ const Home = () => {
         </section>
         <section id="about">
           <h3>About JAM</h3>
-          <img src="https://i.imgur.com/Ey5DhH3.jpg" alt="jordan" />
+          <img src="https://i.imgur.com/WczcQ8E.png" alt="jordan" />
+        
           <div>
             <p>
               I am an innovative Software Engineer with a passion for
@@ -67,8 +67,6 @@ const Home = () => {
               my impressive work ethic and look forward to applying it at a
               high-achieving and supportive company as a Software Engineer.
             </p>
-            {/* RIGHT NOW THIS IS ONLY LINKING TO facebook
-            IT NEEDS TO LINK TO A PDF OF MY RESUME */}
             <a
               className="resume-link"
               href='https://drive.google.com/file/d/1TqY3LDbrpHLqdKSrfQRpknmxUGR_tBsG/view?usp=sharing'
@@ -89,7 +87,7 @@ const Home = () => {
           <div className="contact-info-container">
             <h4>Contact Info</h4>
             <div className="info">
-              <img src="https://i.imgur.com/Ey5DhH3.jpg" alt="jordan" />
+              <img src="https://i.imgur.com/WczcQ8E.png" alt="jordan" />
               <div className="number-email-loc">
                 <p>Phone: 916-698-0989</p>
                 <p>Email: jordmontero96@gmail.com</p>
@@ -134,7 +132,6 @@ const Home = () => {
               <Button variant="light" type="submit">
                 Send
               </Button>
-              {/* <button>Send</button> */}
             </form>
           </div>
         </section>

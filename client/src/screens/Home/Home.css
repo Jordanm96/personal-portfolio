@@ -180,6 +180,11 @@ h4 {
   width: 60%;
   height: 70vh;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.774);
+  background-image: url('https://i.imgur.com/h8Cq62p.jpg?1');
+  background-position: center;
+  color: white;
+  font-weight: bold;
+
 }
 .info {
   display: flex;
@@ -222,6 +227,7 @@ h4 {
   width: 80%;
   box-sizing: content-box;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.774);
+  
 }
 
 input,
@@ -255,6 +261,7 @@ textarea {
 button {
   width: fit-content;
 }
+
 /* find a:hover in projdetail css as well */
 button:hover a:hover {
   color: red;

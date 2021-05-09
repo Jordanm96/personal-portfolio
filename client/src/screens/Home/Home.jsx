@@ -5,6 +5,10 @@ import Button from "react-bootstrap/Button";
 import "./Home.css";
 
 const Home = () => {
+  function sent() {
+    alert("Sent!");
+  }
+
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -129,7 +133,7 @@ const Home = () => {
                 placeholder="Message"
                 required
               />
-              <Button variant="light" type="submit">
+              <Button variant="light" type="submit" onClick={sent} >
                 Send
               </Button>
             </form>

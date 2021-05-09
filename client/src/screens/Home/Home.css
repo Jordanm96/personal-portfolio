@@ -62,6 +62,7 @@ nav a:hover {
   font-family: "Dosis", sans-serif;
 }
 section {
+  margin: 0 auto;
   margin-bottom: 100px;
   width: 90%;
   padding: 100px 20px;

@@ -49,7 +49,7 @@ const Home = () => {
       </nav>
       <div className="body">
         <section id="home">
-          <h2>Welcome,</h2>
+          <h2>Welcome</h2>
           <h2>My name is Jordan Anthony Montero</h2>
           <h2>Nice to meet you!</h2>
         </section>

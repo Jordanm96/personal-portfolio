@@ -56,7 +56,6 @@ const Home = () => {
         <section id="about">
           <h3>About JAM</h3>
           <img src="https://i.imgur.com/WczcQ8E.png" alt="jordan" />
-        
           <div>
             <p>
               I am an innovative Software Engineer with a passion for
@@ -85,7 +84,6 @@ const Home = () => {
           <h3>Projects</h3>
           <CarouselContainer />
         </section>
-
         <section id="contact">
           <h3>Contact Me!</h3>
           <div className="contact-info-container">

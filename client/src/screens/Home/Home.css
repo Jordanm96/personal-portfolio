@@ -180,7 +180,9 @@ h4 {
   width: 60%;
   height: 70vh;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.774);
-  background-image: url('https://i.imgur.com/h8Cq62p.jpg?1');
+  background-image: url('https://i.imgur.com/vxFtijX.jpg?1');
+  background-size: 100vh;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
   font-weight: bold;

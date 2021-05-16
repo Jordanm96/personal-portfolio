@@ -5,6 +5,7 @@ import GroupRun from "./screens/Details/GroupRun";
 import ImaMiru from "./screens/Details/ImaMiru";
 
 import { Route } from "react-router-dom";
+import TetrisClone from "./screens/Details/TetrisClone";
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       </Route>
       <Route path='/ima-miru'>
         <ImaMiru />
+      </Route>
+      <Route path='/tetris-clone'>
+        <TetrisClone />
       </Route>
       <Route exact path="/">
         <Home />

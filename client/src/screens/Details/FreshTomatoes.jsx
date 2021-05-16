@@ -31,8 +31,7 @@ const ProjectDetail = () => {
                 rating to help other users decide what to watch next.
               </p>
               <p>
-                <strong>Built Using:</strong> REACT, JS, CSS, POSTGRESQL, RUBY
-                ON RAILS
+                <strong>Built Using:</strong> React, JS, CSS, Postgresql, Ruby on Rails
               </p>
               <div className="git-app-links">
                 <a

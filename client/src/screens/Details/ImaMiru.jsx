@@ -46,7 +46,7 @@ const ImaMiru = () => {
                 >
                   Github <i className="fas fa-external-link-alt"></i>
                 </a>
-                <Link to="/group-run">Next Project <i className="fas fa-angle-double-right"></i></Link>
+                <Link to="/tetris-clone">Next Project <i className="fas fa-angle-double-right"></i></Link>
               </div>
             </div>
           </div>

@@ -26,6 +26,15 @@ const CarouselContainer = () => {
           </Link>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
+          <Link to="/tetris-clone">
+            <img
+              className="d-block w-100"
+              src="https://i.imgur.com/FirCUVg.png"
+              alt="Fourth slide"
+            />
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item interval={1000}>
           <Link to="/group-run">
             <img
               className="d-block w-100"

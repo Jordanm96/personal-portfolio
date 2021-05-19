@@ -72,7 +72,7 @@ const Home = () => {
             </p>
             <a
               className="resume-link"
-              href='https://drive.google.com/file/d/1TqY3LDbrpHLqdKSrfQRpknmxUGR_tBsG/view?usp=sharing'
+              href='https://drive.google.com/file/d/16sBOplD12eFRfgmZC9d3jc_wml-eEV3F/view?usp=sharing'
               target="_blank"
               rel="noopener noreferrer"
             >

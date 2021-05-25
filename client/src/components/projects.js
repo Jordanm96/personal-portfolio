@@ -24,11 +24,7 @@ export const projectData = [
     description: "Using styled componentsfor the first time, I was able to bring the game to life with accurate shapes and colors. Play the game by lining up tetrominos in rows to get points. The game is over when a block gets jammed at the top!",
     tech: 'React, JS, Styled Components',
     site: "http://tetris-j.surge.sh/",
-<<<<<<< HEAD
     github: "https://github.com/Jordanm96/tetris"
-=======
-    github: "https://github.com/mollyexten/red-line-explorer"
->>>>>>> bb67a4cc78586f1b307d0fbcfc9439b677693970
   },
   {
     image: "https://i.imgur.com/pXD4D0f.png",

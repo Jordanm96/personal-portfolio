@@ -9,7 +9,6 @@ nav {
   justify-content: space-around;
   position: fixed;
   padding: 10px 0;
-  /* This keeps my nav bar on top */
   z-index: 9999;
   background: rgba(118, 166, 242, 0.9);
   font-family: "Dosis", sans-serif;
@@ -45,11 +44,12 @@ a,
   color: black;
 }
 a:hover, .detail-nav h1:hover, .resume-link:hover {
-  font-weight: bold;
   text-decoration: none;
 }
 nav a:hover {
-  color: white;
+  transition: 0.3s;
+  color: black;
+  font-weight: bold;
 }
 
 /* ----------------------------Body---------------------------- */
@@ -63,7 +63,6 @@ nav a:hover {
 }
 section {
   margin: 0 auto;
-  margin-bottom: 100px;
   width: 90%;
   padding: 100px 20px;
 }
@@ -83,10 +82,11 @@ h4 {
 
 /* ----------------------------Welcome---------------------------- */
 #home {
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 10px;
   height: 100vh;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1468581264429-2548ef9eb732?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
@@ -136,20 +136,20 @@ h4 {
   display: flex;
   margin: 0 auto;
   width: fit-content;
-  color:rgba(118, 166, 242, 1);
   font-weight: bold;
   padding: 5px;
-  background-color: white;
+  border: solid 1px black;
   border-radius: 5%;
   align-items: center;
+  transition: 0.7s;
 }
 .resume-link:hover {
   color: white;
-  background-color: rgba(118, 166, 242, 1);
+  background: #474747;
 }
 
 /* ----------------------------Projects---------------------------- */
-/* See ProjectDetail.css */
+/* See Projects.css */
 /* ----------------------------Contact---------------------------- */
 #contact {
   display: grid;
@@ -178,12 +178,7 @@ h4 {
   margin-top: 50px;
   width: 60%;
   height: 70vh;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.774);
-  background-image: url('https://i.imgur.com/vxFtijX.jpg?1');
-  background-size: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.774);
   font-weight: bold;
 }
 .info {
@@ -205,15 +200,14 @@ h4 {
   margin-bottom: 10px;
 }
 .info a {
-  color:rgba(118, 166, 242, 1);
-  color: white;
+  /* color:rgba(118, 166, 242, 1);
+  color: white; */
   font-weight: bold;
   padding: 5px;
   border-radius: 5%;
 }
 .info a:hover {
-  color: rgba(118, 166, 242, 1);
-  background-color: white;
+  color: white;
 }
 .contact-form-container {
   grid-area: form;
@@ -227,9 +221,14 @@ h4 {
   margin-top: 50px;
   width: 80%;
   box-sizing: content-box;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.774);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.774);
 }
-
+.contact-info-container h4 {
+  margin-bottom: 20px;
+}
+.contact-info-container .location {
+  margin-bottom: 30px;
+}
 input,
 textarea,
 button {
@@ -348,10 +347,10 @@ button:hover a:hover {
 
   }
   .contact-form-container {
-    width: 90%;
+    width: 80%;
   }
   .contact-info-container {
-    width: 90%;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 375px) {

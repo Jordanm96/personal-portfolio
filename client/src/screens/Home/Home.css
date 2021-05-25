@@ -103,31 +103,36 @@ h4 {
 /* ----------------------------About---------------------------- */
 #about {
   height: fit-content;
+  width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "heading heading"
     "picture content";
   box-sizing: content-box;
+  justify-items: start;
+  align-items: center;
 }
 #about h3 {
   grid-area: heading;
   font-size: 50px;
   padding-bottom: 20px;
+  justify-self: center;
 }
 #about img {
   grid-area: picture;
-  justify-self: center;
   height: 500px;
   width: 500px;
   border-radius: 50%;
   border: 1px solid black;
+  margin-left: -100px;
+  text-align: left;
 }
 #about div {
   grid-area: content;
   justify-self: start;
   align-self: center;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
   font-weight: bold;
   text-shadow: white 0px 0px 10px;
@@ -200,8 +205,6 @@ h4 {
   margin-bottom: 10px;
 }
 .info a {
-  /* color:rgba(118, 166, 242, 1);
-  color: white; */
   font-weight: bold;
   padding: 5px;
   border-radius: 5%;
@@ -280,7 +283,6 @@ button:hover a:hover {
     border-radius: 50%;
   }
   #about div {
-    font-size: 20px;
     text-align: left;
     font-weight: bold;
     text-shadow: white 0px 0px 10px;
@@ -328,8 +330,6 @@ button:hover a:hover {
   nav h1 {
     display: none;
   }
-}
-@media only screen and (max-width: 750px) {
   li {
     font-size: 20px;
   }
@@ -339,6 +339,12 @@ button:hover a:hover {
   #about {
     display: flex;
     flex-direction: column;
+  }
+  #about img {
+    height: 60%;
+    width: 40%;
+    margin-left: 0px;
+
   }
   #about div {
     padding-right: 0px;

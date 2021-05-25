@@ -1,8 +1,8 @@
-import CarouselContainer from "../../components/CarouselContainer/CarouselContainer";
 import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import "./Home.css";
+import Projects from "../../components/Projects/Projects";
 
 const Home = () => {
   function sent() {
@@ -82,7 +82,7 @@ const Home = () => {
         </section>
         <section id="projects">
           <h3>Projects</h3>
-          <CarouselContainer />
+          <Projects />
         </section>
         <section id="contact">
           <h3>Contact Me!</h3>
@@ -109,7 +109,7 @@ const Home = () => {
                     <i className="fab fa-github"></i>
                   </a>
                 </div>
-                <p>Location: San Diego, CA</p>
+                <p className='location'>Location: San Diego, CA</p>
               </div>
             </div>
           </div>

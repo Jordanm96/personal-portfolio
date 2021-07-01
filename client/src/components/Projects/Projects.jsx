@@ -1,9 +1,10 @@
 import { projectData } from "../projects";
-// import "./ProjectDetail.css";
 import "./Projects.css";
 
 const Projects = () => {
   return (
+    <>
+    <h3>Projects</h3>
     <div className="body">
       {projectData.map((project) => (
         <div key={project.title} className="project-info">
@@ -29,7 +30,8 @@ const Projects = () => {
           </div>
         </div>
       ))}
-    </div>
+      </div>
+      </>
   );
 };
 

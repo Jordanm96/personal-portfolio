@@ -16,12 +16,11 @@ const About = () => {
           coworkers, and clients. Years of work in the restaurant industry honed
           my strong people-facing skills and gave me experience in a fast-paced
           environment. I’ve been commended for my impressive work ethic and look
-          forward to applying it at a high-achieving and supportive company as a
-          Software Engineer.
+          forward to applying it at a high-achieving and supportive company!
         </p>
         <a
           className="resume-link"
-          href="https://drive.google.com/file/d/1Mhp6QpN4DESQACfMKF2g746dIuD-UvSG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Q3ZrREY_vk_wTOsLe8ZKGKgfXTgpgwmM/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

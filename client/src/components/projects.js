@@ -21,7 +21,7 @@ export const projectData = [
     image: "https://i.imgur.com/FirCUVg.png",
     alt: "tetris app",
     title: "Tetris Clone",
-    description: "Using styled componentsfor the first time, I was able to bring the game to life with accurate shapes and colors. Play the game by lining up tetrominos in rows to get points. The game is over when a block gets jammed at the top!",
+    description: "Using styled components with React, I was able to bring the game to life with accurate shapes and colors. Play the game by lining up tetrominos in rows to get points. The game is over when a block gets jammed at the top!",
     tech: 'React, JS, Styled Components',
     site: "http://tetris-j.surge.sh/",
     github: "https://github.com/Jordanm96/tetris"

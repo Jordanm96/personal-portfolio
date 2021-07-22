@@ -13,8 +13,6 @@ const Home = () => {
     animate="visible"
     transition={{ duration: 3 }}
     variants={variants}>
-    {/* <img className={classes.Background} src={nasa} alt='background'/> */}
-
       <div className={classes.Container}>
         <h1 className={classes.Hello}>Welcome!</h1>
         <h1>My name is Jordan Montero,<br></br> and I'm a full stack developer.</h1>

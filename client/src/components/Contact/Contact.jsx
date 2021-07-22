@@ -21,11 +21,10 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    alert("Sent!");
     e.target.reset();
   }
-  function sent() {
-    alert("Sent!");
-  }
+
   return (
     <div className={classes.Contact} id="contact">
       <PageHeader title={"Contact Me"} />
@@ -41,7 +40,7 @@ const Contact = () => {
             placeholder="Message"
             required
           />
-          <Button variant="light" type="submit" onClick={sent}>
+          <Button variant="light" type="submit">
                 Send
               </Button>
         </form>

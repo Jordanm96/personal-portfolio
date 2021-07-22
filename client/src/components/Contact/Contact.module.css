@@ -22,9 +22,12 @@
   border: solid 2px black;
   border-radius: 1%;
 }
-.Contact .Form button {
+.Contact .Form Button {
   width: 25%;
   height: 40px;
+}
+.Contact .Form Button:hover {
+  cursor: pointer;
 }
 .Contact ul {
   list-style-type: none;

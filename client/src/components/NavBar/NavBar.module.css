@@ -1,0 +1,68 @@
+.NavBar {
+  background: rgb(64, 64, 64, .9);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.NavBar nav ul li {
+  display: inline-block;
+  /* Responsive margin */
+  margin: 1.5vw;
+}
+.NavBar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.NavBar a:hover {
+  border-bottom: 5px solid #24c6dc;
+}
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+
+@media (max-width: 990px) {
+  .NavBar .Nav {
+    display: none;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: rgb(64, 64, 64, .9);
+    border-top: solid 2px #24c6dc;
+    
+  }
+  .NavBar nav ul li {
+    padding-left: 15%;
+  }
+  .NavBar {
+    opacity: 1;
+  }
+  .NavBar a:hover {
+    border-bottom: none;
+    color: #24c6dc
+  }
+
+}

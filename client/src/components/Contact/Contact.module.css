@@ -1,0 +1,70 @@
+.Contact {
+  position: relative;
+  margin-bottom: 50px;
+}
+.Contact .Content {
+  display: flex;
+  /* margin-right: 20px; */
+  justify-content: space-around;
+}
+.Contact .Form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /* left: 5%; */
+  /* margin-left: 50px; */
+}
+
+.Contact .Form input, textarea {
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 1%;
+}
+.Contact .Form button {
+  width: 25%;
+  height: 40px;
+}
+.Contact ul {
+  list-style-type: none;
+  margin-left: 50px;
+  background: rgb(64, 64, 64, 0.3);
+  color: white;
+  margin-bottom: 5%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px white;
+  margin-top: 0px;
+  padding: 20px;
+}
+.Contact ul span {
+  color: #24c6dc;
+  font-weight: 1000;
+}
+.Contact ul li {
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+.Contact a {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .Contact .Form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .Contact .Content {
+    flex-direction: column-reverse;
+  }
+  .Contact .Content br {
+    display: none;
+  }
+  .Contact ul {
+    margin: 20px;
+  }
+  .Contact Button {
+    margin: 0 auto;
+  }
+}

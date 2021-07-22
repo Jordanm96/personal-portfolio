@@ -1,0 +1,45 @@
+.Skills {
+  /* background-color: ; */
+  padding-bottom: 5%;
+}
+.Skills p {
+  padding-left: 25%;
+  width: 50%;
+  color: white;
+}
+.Skills .List ul {
+  list-style: none;
+  padding: 0;
+
+}
+.Skills .Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-around;
+  color: white;
+}
+.Skills .Container .List {
+  /* Add a flex basis of 50% to our div of projecct cards and add flex wrap as well. */
+  flex-basis: 49%;
+  background: rgb(64, 64, 64, .7);
+  box-shadow: 0 0 1vw 0.3vw white;
+  border-radius: 9px;
+  margin-bottom: 10px;
+}
+.Skills .List ul li {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 714px) {
+  .Skills p {
+    width: 80%;
+    padding-left: 10%;
+  }
+  .Skills .Container {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

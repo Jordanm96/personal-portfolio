@@ -1,12 +1,15 @@
-import './About.css';
+import classes from "./About.module.css";
+import PageHeader from "./../PageHeader/PageHeader";
+import Me from "./../../img/jordan.png";
 
 const About = () => {
   return (
-    <>
-      <h3>About JAM</h3>
-      <img src="https://i.imgur.com/WczcQ8E.png" alt="jordan" />
-      <div>
-        <p>
+    <div className={classes.AboutMe} id="about">
+      <PageHeader title={"About Me"} />
+      <div className={classes.Container}>
+        <div className={classes.Text}>
+          <h2>Nice to meet you!</h2>
+          <p>
           I am an innovative Software Engineer with a passion for
           problem-solving that drives me to create high quality applications
           that are instinctively user-friendly. I work well on a team, yet I’m a
@@ -17,17 +20,21 @@ const About = () => {
           my strong people-facing skills and gave me experience in a fast-paced
           environment. I’ve been commended for my impressive work ethic and look
           forward to applying it at a high-achieving and supportive company!
-        </p>
-        <a
-          className="resume-link"
-          href="https://drive.google.com/file/d/1Q3ZrREY_vk_wTOsLe8ZKGKgfXTgpgwmM/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
+          </p>
+          <a
+            className={classes.Resume}
+            href="https://drive.google.com/file/d/1Q3ZrREY_vk_wTOsLe8ZKGKgfXTgpgwmM/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </div>
+        <div className={classes.Photo}>
+          <img className={classes.Me} src={Me} alt="me"></img>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

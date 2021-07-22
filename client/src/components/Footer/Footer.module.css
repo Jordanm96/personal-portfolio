@@ -1,0 +1,16 @@
+.Footer {
+  background: #404040;
+  opacity: 0.9;
+  height: 10vh;  
+  display: flex;
+  align-items: center;
+}
+.Footer .Icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.Footer .Icons svg path {
+  cursor: pointer;
+}

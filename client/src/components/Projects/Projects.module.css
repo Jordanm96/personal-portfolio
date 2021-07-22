@@ -1,0 +1,98 @@
+/* Use these stylings for the picture in our welcome component instead of this one */
+.Projects {
+  position: relative;
+  /* background-color: blue; */
+}
+.Projects .ProjectsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Projects .Cards{
+  width: 80%;
+  z-index: 1;
+}
+.Projects .Paragraph {
+  width: 65%;
+  z-index: 1;
+  color: white;
+
+}
+.Projects .ProjectContainer .Thumbnail img {
+  max-width: 489px;
+  /* Responsive Design */
+  width: 100%;
+  opacity: .8;
+  transition: all .2s ease-in-out; 
+
+} 
+.Projects .ProjectContainer .Thumbnail img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+
+.Projects .ProjectContainer .Title {
+  font-size: calc(1.5rem + 1vw);
+  /* color: #24c6dc; */
+  font-weight: 1000;
+}
+.Projects .ProjectContainer .Links {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Projects .ProjectContainer .Links a:hover{  
+  color:  #24c6dc;
+}
+.Projects .ProjectContainer .Text {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  /* Responsive Design */
+  width: 45%;
+}
+
+.Projects .ProjectContainer .Thumbnail {
+  position: relative;
+  /* Responsive Design */
+  padding: 2.5%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects .Cards .ProjectContainer {
+  display: flex;
+  background: rgb(64, 64, 64, .7);
+  color: white;
+  margin-bottom: 5%;
+  /* Responsive Design (height) */
+  height: 100%;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 850px) {
+  .Projects .Cards .ProjectContainer {
+    flex-direction: column;
+  }
+  .Projects .ProjectContainer .Text {
+    width: 80%;
+  }
+  .Projects .ProjectContainer .Thumbnail {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .Projects .ProjectContainer .Text {
+    width: 90%;
+  }
+  .Projects .ProjectContainer .Thumbnail {
+    width: 90%;
+  }
+}

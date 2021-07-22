@@ -1,7 +1,7 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import PageHeader from "../PageHeader/PageHeader";
+import classes from "./Contact.module.css";
 import Button from "react-bootstrap/Button";
 import emailjs from "emailjs-com";
-import './Contact.css';
 
 const Contact = () => {
   function sendEmail(e) {
@@ -27,59 +27,66 @@ const Contact = () => {
     alert("Sent!");
   }
   return (
-    <>
-      <h3>Contact Me!</h3>
-          <div className="contact-info-container">
-            <h4>Contact Info</h4>
-            <div className="info">
-              <img src="https://i.imgur.com/WczcQ8E.png" alt="jordan" />
-              <div className="number-email-loc">
-                <p>Phone: 916-698-0989</p>
-                <p>Email: jordmontero96@gmail.com</p>
-                <div className="info-links">
-                  <a
-                    href="https://www.linkedin.com/in/jordanm96/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://github.com/Jordanm96"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </div>
-                <p className="location">Location: San Diego, CA</p>
-              </div>
-            </div>
-          </div>
-          <div className="contact-form-container">
-            <h4>Let's connect!</h4>
-            <form onSubmit={sendEmail}>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="Email" required />
-              <textarea
-                rows={8}
-                type="text"
-                name="message"
-                placeholder="Message"
-                required
-              />
-              <Button variant="light" type="submit" onClick={sent}>
+    <div className={classes.Contact} id="contact">
+      <PageHeader title={"Contact Me"} />
+      <div className={classes.Content}>
+      {/* <form onSubmit={sendEmail}> */}
+        <form onSubmit={sendEmail} className={classes.Form}>
+          <input type="text" name="subject" placeholder="Name" required />
+          <input type="text" name="email" placeholder="Email" required />
+          <textarea
+            rows={8}
+            type="text"
+            name="message"
+            placeholder="Message"
+            required
+          />
+          <Button variant="light" type="submit" onClick={sent}>
                 Send
               </Button>
-            </form>
-          </div>
-    </>
+        </form>
+        <ul className={classes.Info}>
+          <li>
+            <span>Email: </span>
+            <br />
+            <a href="mailto: jordmontero96@gmail.com">
+              jordmontero96@gmail.com
+            </a>
+          </li>
+          <li>
+            <span>LinkedIn: </span>
+            <br />
+            <a
+              href="https://www.linkedin.com/in/jordanm96"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.linkedin.com/in/jordanm96
+            </a>
+          </li>
+          <li>
+            <span>Github: </span>
+            <br />
+            <a
+              href="https://github.com/Jordanm96"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://github.com/Jordanm96
+            </a>
+          </li>
+          <li>
+            <span>Phone: </span>
+            <br />
+            916-698-0989
+          </li>
+          <li>
+            <span>Location: </span> <br />
+            San Diego, CA
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 

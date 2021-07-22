@@ -5,15 +5,7 @@
   padding-top: 80px;
   position: relative;
 }
-.Home .Background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* right: 0; */
-  z-index: 0;
-  
-}
+
 .Home .Aztecs {
   width: 20%;
   max-width: 150px;
@@ -21,6 +13,7 @@
   bottom: 0;
   left: 2%;
 }
+
 .Home .Container {
   position: absolute;
   top: 15%;
@@ -28,14 +21,16 @@
   color: white;
   /* color: black; */
 }
+
 .Home .Container .Hello {
   /* Keeping this font size because we want it to be bigger than the normal h1 */
   font-size: calc(1.7rem + 3vw);
 }
+
 .Home .Container h1 {
   margin: 0;
 }
-/* If i want to add an image to the right side */
+
 .Home .Right {
   color: white;
   width: 60%;
@@ -43,4 +38,9 @@
   position: absolute;
   right: 10%;
   top: 20%;
+}
+@media (max-width: 500px) {
+  .Home {
+    height: 72vh;
+  }
 }
